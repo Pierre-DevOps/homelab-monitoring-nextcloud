@@ -1,6 +1,6 @@
-# Homelab – Monitoring, Nextcloud & OnlyOffice
+# Homelab – Prometheus, Grafana, Nextcloud, OnlyOffice & Docker
 
-## Objectif
+## Mon Objectif
 
 Ce projet est un homelab personnel composé de trois machines. L'objectif est de mettre en pratique l'administration système Linux, la supervision, et le déploiement de services collaboratifs.
 
