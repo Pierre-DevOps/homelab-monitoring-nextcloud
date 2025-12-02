@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+*.swp
+*.swo
+
+# Backups
+*.bak
+*.backup
+
+# Secrets (ne jamais commiter)
+*.key
+*.pem
+config.php
