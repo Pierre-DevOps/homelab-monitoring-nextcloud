@@ -49,6 +49,24 @@ Un certificat auto-signé avec SAN a été généré pour couvrir les trois doma
 - Nextcloud
 - Docker, OnlyOffice
 - Certificats SSL auto-signés
+- 
+## Sauvegardes
+
+Les sauvegardes sont automatisées avec rsync et cron.
+
+**srv-nextcloud** sauvegarde chaque nuit à 2h :
+- Dump de la base MariaDB
+- Config Nextcloud
+- Envoi vers srv-monitor via rsync
+
+**srv-monitor** sauvegarde chaque nuit à 3h :
+- Config Prometheus
+- Configs Nginx
+- Config et données Grafana
+
+Les backups de plus de 7 jours sont supprimés automatiquement.
+
+Les scripts sont disponibles dans le dossier `scripts/`.
 
 ## Auteur
 
